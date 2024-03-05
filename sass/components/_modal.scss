@@ -1,0 +1,262 @@
+/* __________________________________________________________MODAL */
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition-duration: 250ms;
+  width: 528px;
+  min-height: 581px;
+  padding: 40px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.label {
+  position: relative;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.icon-post,
+.icon-tel,
+.icon-name {
+  position: absolute;
+  left: 15px;
+  top: 31px;
+  fill: #212121;
+}
+
+.icon-post:hover,
+.icon-tel:hover,
+.icon-name:hover {
+  fill: #2196f3;
+}
+
+.main-input:focus + .icon-name {
+  fill: #2196f3;
+}
+
+.main-input:focus + .icon-tel {
+  fill: #2196f3;
+}
+
+.main-input:focus + .icon-post {
+  fill: #2196f3;
+}
+
+.main-input {
+  width: 100%;
+  height: 40px;
+  padding: 14px 15px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: border-color 250ms ease-in-out;
+  margin-top: 4px;
+  outline: none;
+}
+
+.main-input:focus,
+.main-input:hover {
+  border-color: #2196f3;
+  fill: #2196f3;
+}
+
+.comment {
+  width: 100%;
+  min-height: 120px;
+  margin-bottom: 20px;
+  resize: none;
+  border-radius: 4px;
+  border-color: rgba(117, 117, 117, 0.5);
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: border-color 250ms ease-in-out;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  margin-top: 4px;
+  outline: none;
+
+  &:focus,
+  &:hover {
+    border-color: #2196f3;
+  }
+}
+
+.comment::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-btn {
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #188ce8;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #fff;
+  border-color: #188ce8;
+  cursor: pointer;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: 0.03em;
+  color: #757575;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.modal-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+.modal-link {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #2196f3;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: 0.03em;
+}
+
+.icon-galochka {
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: 2px solid #212121;
+  transition: background-color 250ms linear, border-color 250ms linear;
+}
+
+.icon-galochka:hover {
+  border-color: #2196f3;
+}
+
+.checkbox:checked + span .icon-galochka {
+  background-color: #2196f3;
+  border-color: #2196f3;
+}
+
+.checkbox:focus + span .icon-galochka {
+  border-color: #2196f3;
+}
+
+.checkbox:hover span .icon-galochka {
+  border-color: #2196f3;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  padding: 0px 16px;
+}
+
+.checkbox {
+  position: absolute;
+}
+
+/* __________________________________________________BACKDROP*/
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.1);
+  transition: opacity 250ms, visibility 250ms;
+}
+
+.close-icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  fill: #000000;
+  border-color: rgb(0, 0, 0, 0.1);
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  transition: fill 250ms linear;
+  padding: 0px;
+  outline: none;
+}
+
+.modal-close-icon {
+  width: 11px;
+  height: 11px;
+}
+
+.modal-icon-link {
+  width: 11px;
+  height: 11px;
+}
+
+.close-icon:focus,
+.close-icon:hover {
+  fill: #2196f3;
+}
+
+.is-hidden {
+  visibility: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}

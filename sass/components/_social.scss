@@ -1,0 +1,112 @@
+/*________________________________________________MAIN-SOCIAL_______________________*/
+.social {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+
+  &__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:focus,
+  &__link:hover {
+    background-color: #2196f3;
+  }
+
+  &__link:focus &__icon {
+    fill: #ffffff;
+  }
+
+  &__link:hover &__icon {
+    fill: #ffffff;
+  }
+
+  &__icon {
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__item:last-child {
+    margin-right: 0px;
+  }
+}
+
+/* _______________________________________________FOOTER-SOCIALS____________________ */
+
+.footer {
+  &__item-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__item-link:focus,
+  &__item-link:hover {
+    background-color: #2196f3;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__item-link:focus,
+  &__item-link:hover .social__icon {
+    fill: #ffffff;
+  }
+
+  &__icon {
+    fill: #ffffff;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__links {
+    display: flex;
+    margin-top: 0px;
+    gap: 10px;
+  }
+
+  &__text {
+    display: flex;
+   justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  &__social {
+    margin-top: 60px;
+  
+
+    @media screen and (min-width:768px) {
+     margin-top: 0;
+    }
+
+            @media screen and (min-width:1200px) {
+           margin-right: 93px;
+            }
+  }
+}

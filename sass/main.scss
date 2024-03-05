@@ -1,0 +1,32 @@
+// _____________________________________UTILS
+
+@import './utils/mixin';
+@import './utils/variables';
+@import './base/reset';
+@import './base/common';
+
+
+// _____________________________________BASE-STYLES
+
+@import './components/header';
+@import './components/logo';
+@import './components/hero';
+@import './components/text';
+@import './components/works';
+@import './components/our-team';
+@import './components/clients';
+@import './components/footer';
+
+
+
+// _____________________________________PORTFOLIO
+
+@import './components/portfolio';
+
+// _____________________________________SOCIAL
+
+@import './components/social';
+
+// _____________________________________MODAL
+
+@import './components/modal';

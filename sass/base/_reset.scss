@@ -1,0 +1,56 @@
+body {
+  font-family: 'roboto', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+  /* outline: 2px solid tomato; */
+
+  @include mq(mobile) {
+    width: 450px;
+  }
+
+  @include mq(tablet) {
+    width: 738px;
+  }
+
+  @include mq(desktop) {
+    width: 1170px;
+  }
+
+  @media screen and (min-width:1200px) {
+    
+
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+}

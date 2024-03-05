@@ -1,0 +1,68 @@
+/* _____________________________________________WORKS_______________________*/
+
+.works {
+  // padding-bottom: 100px;
+
+
+
+  &__title {
+    color: var(--title-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+    display: none;
+
+    @media screen and (min-width:1200px) {
+    
+      display: block;
+    }
+  }
+
+  &__img{
+    display: block;
+  }
+
+  &__list-img {
+    display: none;
+    position: relative;
+
+    @media screen and (min-width:1200px) {
+    
+      display: block;
+    }
+   
+  }
+
+  &__list-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background: rgba(47, 48, 58, 0.8);
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    display: none;
+
+    @media screen and (min-width:1200px) {
+    
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
