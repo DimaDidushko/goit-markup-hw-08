@@ -18,6 +18,14 @@ ol {
   padding: 0px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
 .list {
   list-style: none;
   padding: 0;
@@ -32,19 +40,13 @@ ol {
   padding-top: 16px;
   padding-bottom: 16px;
   margin: 0 auto;
+  padding-top: 60px;
+    padding-bottom: 60px;
   /* outline: 2px solid tomato; */
 
   @include mq(mobile) {
     width: 450px;
   }
-
-@media screen and (min-width:480px){
- 
- padding-top: 60px;
- padding-bottom: 60px;
-}
-
-
   
   @include mq(tablet) {
     width: 738px;
