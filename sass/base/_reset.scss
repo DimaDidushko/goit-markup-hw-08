@@ -29,8 +29,8 @@ ol {
 
 .container {
   width: 100%;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   margin: 0 auto;
   /* outline: 2px solid tomato; */
 
@@ -38,6 +38,14 @@ ol {
     width: 450px;
   }
 
+@media screen and (min-width:480px){
+ 
+ padding-top: 60px;
+ padding-bottom: 60px;
+}
+
+
+  
   @include mq(tablet) {
     width: 738px;
   }
@@ -46,11 +54,6 @@ ol {
     width: 1170px;
   }
 
-  @media screen and (min-width:1200px) {
-    
 
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 
 }

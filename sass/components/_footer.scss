@@ -109,20 +109,16 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 
-@media screen and (min-width:1200px) {
+  @media screen and (min-width:1200px) {
     width: 358px;
     margin-right: 12px;
   }
-
   }
 
   &__input:focus:valid {
     outline: 2px solid;
     outline-offset: -1px;
     outline-color: #2196f3;
-
-     
-
   }
 
   &__button {
@@ -155,9 +151,9 @@
     display: flex;
     justify-content: center;
 
-@media screen and (min-width:1200px) {
-  justify-content: flex-start;
-}
+   @media screen and (min-width:1200px) {
+   justify-content: flex-start;
+   }
   }
 
   &__icon-send {
@@ -191,5 +187,5 @@
       flex-direction: column;
       width: 570px;
      }
-}
+ }
 }

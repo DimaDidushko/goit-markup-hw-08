@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <!-- <header class="header">
+  <header class="header">
     <div class="container header__container">
       <nav class="header__nav">
         <a class="logo link" href="./index.html">Web<span class="header__logo">Studio</span></a>
@@ -48,11 +48,15 @@
             +38 096 11 11 111
           </a>
         </li>
-
-
       </ul>
+
+      <button class="mobile-menu__open" type="button" data-menu-open>
+        <svg class="mobile-menu__open-icon" width="24" height="16">
+          <use href="./icons/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
     </div>
-  </header> -->
+  </header>
 
   <main>
     <section class="hero">
@@ -63,7 +67,7 @@
     </section>
 
     <section class="text">
-      <div class="container">
+      <div class="container text__container">
 
         <ul class="text__list list">
           <li class="text__list-item">
@@ -427,6 +431,52 @@
     </div>
   </footer>
 
+  <!-- _______________________________mobile-menu_____________________ -->
+
+<div class="mobile-menu is-hidden" data-menu>
+
+<button type="button" class="mobile-menu__close" data-menu-close>
+  <svg class="mobile-menu__close-icon" width="19" height="19">
+    <use href="./icons/sprite.svg#icon-close-menu"></use>
+  </svg>
+</button>
+
+  <ul class="mobile-menu__nav list ">
+    <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__nav-link link">Студія</a></li>
+   <li class="mobile-menu__item"><a href="portfolio.html" class="mobile-menu__nav-link link">Портфоліо</a></li>
+   <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__nav-link link">Контакти</a></li>
+  </ul>
+
+  <ul class="mobile-menu__contacts list ">
+    <li class="mobile-menu__tel"><a href="tel:+380961111111" class="mobile-menu__tel-link link"> +38 096 111 11 11</a></li>
+    <li class="mobile-menu__mail"><a href="mailto:info@devstudio.com" class=" mobile-menu__mail-link link">info@devstudio.com</a></li>
+  </ul>
+
+  <ul class="mobile-menu__soc list">
+
+    <li class="mobile-menu__soc-item link">
+      <a href="#" class="mobile-menu__soc-link link" target="_blank" rel="noopener noreferrer">
+      Instagram</a></li>
+      
+    <li class="mobile-menu__soc-item link">
+      <a href="#" class="mobile-menu__soc-link link" target="_blank" rel="noopener noreferrer">
+      Twitter</a></li>
+
+    <li class="mobile-menu__soc-item link">
+      <a href="#" class="mobile-menu__soc-link link" target="_blank" rel="noopener noreferrer">
+      Facebook</a></li>
+
+    <li class="mobile-menu__soc-item link">
+      <a href="#" class="mobile-menu__soc-link link" target="_blank" rel="noopener noreferrer">
+      LinkedIn</a></li>
+
+
+    
+  </use>
+</svg>
+
+</div>
+
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="close-icon" type="button" data-modal-close>
@@ -485,6 +535,7 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
