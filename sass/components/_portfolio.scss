@@ -1,5 +1,19 @@
 /*-_________________________________________PORTFOLIO ____________________*/
 .portfolio {
+ 
+  @media screen and (min-width:480px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+  @media screen and (min-width:1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+
+
+
+
   &__btn {
     font-weight: 500;
     font-size: 16px;
@@ -41,17 +55,16 @@
     color: var(--text-color-main);
     line-height: 1.87;
     margin-top: 4px;
+  
   }
 
   &__btns {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 40px;
-  
-   
-
+    
     @media screen and (min-width:480px) {
         width: 326px;
+        margin-bottom: 40px;
       }
 
     @media screen and (min-width:768px) {
@@ -61,7 +74,6 @@
       }
 
      @media screen and (min-width:1200px) {
-        margin-top: 34px;
         margin-bottom: 50px;
       }
   }
@@ -69,23 +81,22 @@
   &__box {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     gap: 30px;
     justify-content: center;
 
-    @media screen and (min-width:480px) {
-       justify-content: center;
-      }
+    // @media screen and (min-width:480px) {
+    //    justify-content: center;
+    //   }
 
     @media screen and (min-width:768px) {
        justify-content: flex-start;
+      
       } 
 
-     @media screen and (min-width:1200px) {
-  justify-content: center;
+    @media screen and (min-width:1200px) {
+     justify-content: center;
 }
-
-  }
+}
 
   &__item {
     margin-right: 8px;
@@ -104,14 +115,16 @@
     border: 1px solid #f5f4fa;
     border-top: none;
     padding: 20px 24px;
-    height: 147px;
+   
   }
 
   &__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
   }
 
   &__link:focus,
@@ -123,7 +136,7 @@
   &__overlay-img {
     position: relative;
     overflow: hidden;
- 
+    display: block;
   }
 
   &__overlay-text {
@@ -145,10 +158,19 @@
   }
 
   &__card{
+   
+      @media screen and (min-width:480px) {
+          width: 450px;
+        }
+    
+    @media screen and (min-width:768px) { 
 
-    @media screen and (min-width:768px) {
-        width: 354px;   
+      width: 354px;
       }
+
+    @media screen and (min-width:1200px) {
+    width: 370px;
+     }
   }
 
   .portfolio__card:focus &__overlay-text,

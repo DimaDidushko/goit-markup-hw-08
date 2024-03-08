@@ -37,11 +37,9 @@ img {
 
 .container {
   width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  // padding-top: 16px;
+  // padding-bottom: 16px;
   margin: 0 auto;
-  padding-top: 60px;
-    padding-bottom: 60px;
   /* outline: 2px solid tomato; */
 
   @include mq(mobile) {
@@ -56,6 +54,14 @@ img {
     width: 1170px;
   }
 
+    // @media screen and (min-width:1200px) {
+    //   padding-top: 60px;
+    //   padding-bottom: 60px;
+    // }
 
+// @media screen and (min-width:1200px) {
+// padding-top: 94px;
+//   padding-bottom: 94px;
+// }
 
 }
