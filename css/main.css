@@ -1395,6 +1395,13 @@ img {
   color: #fff;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .footer__text {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 .footer__social {
   margin-top: 60px;
 }
