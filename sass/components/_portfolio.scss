@@ -115,12 +115,14 @@
     border: 1px solid #f5f4fa;
     border-top: none;
     padding: 20px 24px;
+    flex-grow: 1;
    
   }
 
   &__link {
     display: flex;
     flex-direction: column;
+  height: 100%;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -161,10 +163,11 @@
    
       @media screen and (min-width:480px) {
           width: 450px;
+        
         }
     
     @media screen and (min-width:768px) { 
-
+      
       width: 354px;
       }
 
