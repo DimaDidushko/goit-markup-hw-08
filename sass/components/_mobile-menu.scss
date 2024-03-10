@@ -20,12 +20,19 @@ font-family: var(--font-family);
     font-size: 40px;
     letter-spacing: 0.02em;
     color: #212121;
+    transition: color 250ms linear
  }
 
- &__nav-link:focus {
-color: #2196f3;
+
+
+&__nav-link.current {
+    color: #2196f3
 }
 
+ &__nav-link:focus,
+  &__nav-link:hover {
+color: #2196f3;
+}
 
 &__item:not(:last-child) {
     margin-bottom: 32px;
@@ -64,13 +71,13 @@ font-family: var(--font-family);
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196f3;
-
     display: flex;
     flex-wrap: wrap;
     position: absolute;
     left: 40px;
     bottom: 48px;
 }
+
 
 &__soc-item:not(:last-child){
     margin-right: 20px;
@@ -83,7 +90,37 @@ font-family: var(--font-family);
         line-height: 122%;
         letter-spacing: 0.02em; 
         color: #2196f3;
+        position: relative;
+
+@media screen and (max-width:479px) {
+       font-size: 11px;
+
+    }
+
 }
+
+ &__soc-link::after{
+     content: '';
+     border: 1px solid rgba(33, 33, 33, 0.2);
+     width: 22px;
+     height: 0px;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 10px;
+    right: -22px;
+ }
+
+ &__soc-link::before {
+     content: '';
+     border: 1px solid rgba(33, 33, 33, 0.2);
+     width: 22px;
+     height: 0px;
+     transform: rotate(-90deg);
+     position: absolute;
+     top: 10px;
+     left: -22px;
+     z-index: 100;
+ }
 
 &__close{
     position: absolute;
@@ -113,9 +150,13 @@ font-family: var(--font-family);
 
 &__open-icon{
     fill: #212121;
+    transition: fill 250ms linear
 }
 
-
+&__open-icon:focus,
+&__open-icon:hover {
+    fill: #2196f3;
+}
 
 &__close:focus,
 &__close:hover{

@@ -27,6 +27,8 @@
 
   &::after {
     content: '';
+
+    @media screen and (min-width:768px) {
     position: absolute;
     left: 0px;
     bottom: 0px;
@@ -34,8 +36,11 @@
     height: 4px;
     border-radius: 2px;
     background-color: currentColor;
+    }
   }
+
 }
+
 // ____________________________________________BTN
 .btn {
   color: var(--color-white);
