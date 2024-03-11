@@ -1059,6 +1059,16 @@ img {
 .mobile-menu__soc-item:not(:last-child) {
   margin-right: 20px;
 }
+.mobile-menu__soc-item:nth-child(-n+3)::after {
+  content: "";
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  width: 22px;
+  height: 0px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: absolute;
+  top: 10px;
+}
 .mobile-menu__soc-link {
   font-family: var(--font-family);
   font-weight: 500;
@@ -1072,29 +1082,6 @@ img {
   .mobile-menu__soc-link {
     font-size: 11px;
   }
-}
-.mobile-menu__soc-link::after {
-  content: "";
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  width: 22px;
-  height: 0px;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  position: absolute;
-  top: 10px;
-  right: -22px;
-}
-.mobile-menu__soc-link::before {
-  content: "";
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  width: 22px;
-  height: 0px;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  position: absolute;
-  top: 10px;
-  left: -22px;
-  z-index: 100;
 }
 .mobile-menu__close {
   position: absolute;
@@ -1665,11 +1652,16 @@ img {
 .modal-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 480px) {
+  .modal-title {
+    font-size: 20px;
+  }
 }
 
 .modal-link {

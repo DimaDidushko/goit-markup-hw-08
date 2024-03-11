@@ -8,6 +8,7 @@
    height: 100%;
    background: #fff;
   
+  
 &__nav {
     display: flex;
     flex-direction: column;
@@ -83,6 +84,18 @@ font-family: var(--font-family);
     margin-right: 20px;
 }
 
+&__soc-item:nth-child(-n + 3)::after {
+    content: '';
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        width: 22px;
+        height: 0px;
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 10px;
+}
+
+
+
 &__soc-link{
     font-family: var(--font-family);
         font-weight: 500;
@@ -96,31 +109,7 @@ font-family: var(--font-family);
        font-size: 11px;
 
     }
-
 }
-
- &__soc-link::after{
-     content: '';
-     border: 1px solid rgba(33, 33, 33, 0.2);
-     width: 22px;
-     height: 0px;
-    transform: rotate(-90deg);
-    position: absolute;
-    top: 10px;
-    right: -22px;
- }
-
- &__soc-link::before {
-     content: '';
-     border: 1px solid rgba(33, 33, 33, 0.2);
-     width: 22px;
-     height: 0px;
-     transform: rotate(-90deg);
-     position: absolute;
-     top: 10px;
-     left: -22px;
-     z-index: 100;
- }
 
 &__close{
     position: absolute;
